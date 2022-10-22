@@ -1,0 +1,36 @@
+﻿@page
+@model ASP_NETCoreWebAPI.Pages.Courses.CourseIndexModel
+@{
+    ViewData["Title"] = "Administrator: Create/Return/Update/Delete Items";
+}
+
+<h3>Create, return, update and delete items</h3>
+
+<h1 class="margin-top">Add new item</h1>
+<form id="item-form" action="/post-item" method="POST">
+    <p2 class="margin-slight-top">First item attribute</p2>
+    <input type="text" name="itemFirstAttribute" />
+    <p2>Second item attribute</p2>
+    <input type="text" name="itemSecondAttribute" />
+    <p2>Third item attribute</p2>
+    <input type="text" name="itemThirdAttribute" />
+    <p2>Forth item attribute</p2>
+    <input type="text" name="itemForthAttribute" />
+</form>
+
+<button class="button green" onclick="postRequest()">Submit item</button>
+
+<h1 class="margin-top">Return items from database,</h1>
+<h1>to be updated or deleted</h1>
+<p2 class="margin-slight-top">Item ID</p2>
+<input type="text" id="get-item-per-id" value="1" />
+
+<button class="button blue" onclick="returnItemById()">Return item details per ID</button>
+<p2 class="margin-slight-top">Or...</p2>
+<button class="button blue" onclick="outputItems()">Return all items</button>
+
+
+<div id="item-header"></div>
+<ul id="item-per-id-list"></ul>
+<div id="items-header"></div>
+<ul id="item-list"></ul>

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]ASP.NET Core Minimal Web API</title>
+    <link rel="stylesheet" href="~/css/css.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/font.css" asp-append-version="true" />
+</head>
+<body>
+<div class="header">
+    <div class="float-right">
+        <div id="login-status-label"><p1>Logged out</p1></div>
+        <div><p1 id="login-status"></p1></div>
+    </div>
+    <h1>ASP.NET Core Minimal Web API</h1>
+    <h1>by Jonas Lind</h1>
+    <div class="margin-top">
+        <h2>Administrator</h2>
+        <a class="nav-link text-dark" asp-area="" asp-page="/Items/ItemIndex"><p1 class="margin-right">Administrate Items</p1></a>
+        <a class="nav-link text-dark" asp-area="" asp-page="/Users/UserIndex"><p1>Administrate Users</p1></a>
+    </div>
+
+    <div class="NONE">
+        <h2>User</h2>
+        <a href="#" onclick="landingPage()"><p1 class="margin-right">Landing Page</p1></a>
+        <div class="hidden inline">
+            <a href="#" id="nav-browse" onclick="browseItems()"><p1 class="margin-right">Browse Items</p1></a>
+            <a href="#" id="nav-user-items" onclick="boundItems()"><p1 class="margin-right">My Items</p1></a>
+            <a href="#" id="nav-user-profile" onclick="userProfile()"><p1>My Profile</p1></a>
+        </div>
+    </div>
+</div>
+
+<div id="main-panel" class="panel">
+    <div>
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p1>&copy; 2022 Jonas Lind. All rights reserved.</p1>
+    </div>
+</footer>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/db-ops.js" asp-append-version="true"></script>
+<script src="~/js/user-admin.js" asp-append-version="true"></script>
+<script src="~/js/item-admin.js" asp-append-version="true"></script>
+<script src="~/js/user-pages.js" asp-append-version="true"></script>
+
+
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿@page
+@using System.Xml.Serialization
+@model ASP_NETCoreWebAPI.Pages.Users.UserIndexModel
+@{
+    ViewData["Title"] = "Administrator: Add/Return Users";
+}
+
+<h3>Create, return, update and delete users</h3>
+
+<h1 class="margin-top">Add new user</h1>
+<form id="user-form" action="/postUser" method="POST">
+    <p2 class="margin-slight-top">User ID</p2>
+    <input type="text" name="id" />
+    <p2>Password</p2>
+    <input type="text" name="password" />
+    <p2>First attribute</p2>
+    <input type="email" name="attributeFirst" />
+    <p2>Second attribute</p2>
+    <input type="text" name="attributeSecond" />
+    <p2>Third attribute</p2>
+    <input type="text" name="attributeThird" />
+</form>
+
+<button class="button green" id="post-user">Submit user</button>
+<h1 class="margin-top">Return users from database,</h1>
+<h1>to be updated or deleted</h1>
+<input type="text" id="user-per-id" value="example@email.com" />
+<button class="button blue" id="return-user-per-id" onclick="userPerId()">Return user details per ID</button>
+<p2 class="margin-slight-top">Or...</p2>
+<button class="button blue" id="get-users">Return all users</button>
+
+<div id="user-header"></div>
+<ul id="user-per-id-list"></ul>
+<div id="users-header"></div>
+<ul id="user-list"></ul>

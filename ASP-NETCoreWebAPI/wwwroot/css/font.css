@@ -1,0 +1,180 @@
+@font-face {
+    font-family: OpenSansLight;
+    src: url("../fonts/OpenSans-Light.ttf");
+}
+
+@font-face {
+    font-family: OpenSansMedium;
+    src: url("../fonts/OpenSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: OpenSansRegular;
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: OpenSansExtraBold;
+    src: url("../fonts/OpenSans-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: FiraSansRegular;
+    src: url("../fonts/FiraSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: FiraMonoRegular;
+    src: url("../fonts/FiraMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: FiraSansBlack;
+    src: url("../fonts/FiraSans-Black.ttf");
+}
+
+@font-face {
+    font-family: FiraSansLight;
+    src: url("../fonts/FiraSans-Light.ttf");
+}
+
+@font-face {
+    font-family: FiraSansMedium;
+    src: url("../fonts/FiraSans-Medium.ttf");
+}
+
+h1 {
+    color: #2e2e2e;
+    display: block;
+    font-family: "FiraSansMedium", serif;
+    font-size: 2em;
+    font-weight: 900;
+    margin: 0em;
+}
+
+h2 {
+    color: #007bff;
+    display: inline;
+    font-family: "OpenSansMedium", serif;
+    font-size: 1.15em;
+    font-weight: 900;
+    margin-right: 0.8em;
+    margin-top: 0.5em;
+}
+
+h3 {
+    color: #2e2e2e;
+    font-family: "FiraSansLight", serif;
+    font-size: 2.25em;
+    font-weight: 300;
+    margin: 0em;
+}
+
+h4 {
+    color: #2e2e2e;
+    font-family: "OpenSansMedium", serif;
+    font-size: 1.15em;
+    font-weight: 900;
+    margin: 1.5em 0em 0em 0em;
+}
+
+h5 {
+    color: #2e2e2e;
+    font-family: "FiraSansBlack", serif;
+    font-size: 5em;
+    margin-bottom: -0.7em;
+    margin-top: 0.8em;
+}
+
+h6 {
+    color: #f2f2f2;
+    font-family: "FiraSansLight";
+    font-size: 2.25em;
+    font-weight: 300;
+    margin-bottom: 0;
+    padding: 0.5em;
+}
+
+p1 {
+    color: #ecf0f1;
+    display: inline;
+    font-family: "OpenSansLight", serif;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+p2 {
+    color: #2e2e2e;
+    display: block;
+    font-family: "FiraSansRegular", serif;
+    font-size: 1.05em;
+    font-weight: 300;
+}
+
+p3 {
+    color: #f2f2f2;
+    display: block;
+    font-family: "OpenSansMedium", serif;
+    font-size: 1.15em;
+    font-weight: 400;
+}
+
+p4 {
+    color: #919191;
+    display: block;
+    font-family: "FiraMonoRegular", serif;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+p5 {
+    color: #d9534f;
+    display: block;
+    font-family: "FiraSansLight", serif;
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+p6 {
+    color: #789395;
+    display: block;
+    font-family: "FiraSansLight", serif;
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+p7 {
+    color: #9e9e9e;
+    display: block;
+    font-family: "FiraMono", serif;
+    font-size: 1em;
+    margin-top: 0.1em;
+}
+
+p8 {
+    color: #9e9e9e;
+    display: inline;
+    font-family: "FiraMono", serif;
+    font-size: 1em;
+    margin-top: 0.1em;
+}
+
+a:link {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+a:active {
+    color: #2e2e2e;
+    text-decoration: none;
+}

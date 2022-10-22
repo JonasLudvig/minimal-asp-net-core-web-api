@@ -1,0 +1,35 @@
+﻿@page
+@model ASP_NETCoreWebAPI.Pages.Users.UserIndexModel
+
+@{
+    ViewData["Title"] = "ASP.NET Core Minimal Web API";
+}
+
+<div id="login-page">
+    <h3>Login or register to browse and shop for items</h3>
+
+    <h1 class="margin-top">Login</h1>
+    <form id="login-form">
+        <p2 class="margin-slight-top">E-mail</p2>
+        <input type="text" id="user-login" />
+    </form>
+
+    <button class="button green" onclick="login()">Login</button>
+
+    <h1 class="margin-top">Register</h1>
+
+    <form id="user-form" action="/postUser" method="POST">
+        <p2 class="margin-slight-top">User ID</p2>
+        <input type="text" name="id" />
+        <p2>Password</p2>
+        <input type="text" name="password" />
+        <p2>First attribute</p2>
+        <input type="text" name="attributeFirst" />
+        <p2>Second attribute</p2>
+        <input type="text" name="attributeSecond" />
+        <p2>Third attribute</p2>
+        <input type="text" name="attributeThird" />
+    </form>
+
+    <button class="button blue" id="post-user">Register</button>
+</div>
